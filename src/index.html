@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <title>Document</title>
+    <title>HTML5 Form</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <div class="card">
             <div class="card-header justify-content-">
                 <h1>Payment form example</h1>
@@ -30,7 +30,7 @@
                         <!-- PRIMER FILA -->
                         <div class="form-group col-md-5">
                             <label for="inputEmail4">Card #</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXX" />
+                            <input type="number" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXX" />
                         </div>
                         <div class="form-group col-md-3">
                             <label for="inputPassword4">CVC#</label>
@@ -38,7 +38,13 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputPassword4">Amount</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Amount" />
+                            <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Amount">
+                                </div>
                         </div>
                     </div>
 
@@ -47,11 +53,11 @@
                         <div class="form-group col">
                             <label for="inputFistname">First name</label>
                             <input type="text" class="form-control" id="inputFistname"
-                                placeholder="Apartment, studio, or floor" />
+                                placeholder="Juan" />
                         </div>
                         <div class="form-group col">
                             <label for="inputLastName">Last name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Password" />
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Aguirrezabala" />
                         </div>
                     </div>
 
@@ -65,7 +71,10 @@
                             <label for="inputState">State</label>
                             <select id="inputState" class="form-control">
                                 <option selected>Pick a state</option>
-                                <option>...</option>
+                                <option value="1">Montevideo</option>
+                                    <option value="2">Canelones</option>
+                                    <option value="3">Maldonado</option>
+                                    <option value="4">San José</option>
                             </select>
                         </div>
                         <div class="form-group col-md-3">
